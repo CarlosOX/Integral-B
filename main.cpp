@@ -20,7 +20,7 @@ int main(int argc, char* argv[]) {
   while(continua){
 
     cout<<"\nMENU\n";
-    cout<<"Escoge una opcion\n";
+    cout<<"Escoge una opcion (escoger un numero entre el 1 y el 4)\n";
     cout<<"1. Ver mapa\n";
     cout<<"2. Escoger ruta\n";
     cout<<"3. ver grafo\n";
@@ -45,9 +45,9 @@ int main(int argc, char* argv[]) {
 
     else if(opcion==2){
       int posicion,destino;
-      cout<<"Introduzca el numero del lugar donde se encuentre: ";
+      cout<<"Introduzca el numero del lugar donde se encuentre(valores entre 0 y 9): ";
       cin>>posicion;
-      cout<<"\nIntroduzca el numero del lugar donde desea ir:";
+      cout<<"\nIntroduzca el numero del lugar donde desea ir(valores entre 0 y 9):";
       cin>>destino;
       cout<<endl;
       cout<<hotel.BFS(posicion,destino)<<endl;
