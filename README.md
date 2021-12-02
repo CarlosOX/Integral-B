@@ -9,6 +9,12 @@ En este proyecto se implementa la creación de un grafo para un hotel que se enc
 
 ### AQUI SE PUEDE APRECIAR EL GRAFO DEL HOTEL
 
+### SICT0301B: Evalúa los componentes
+
+Presenta Casos de Prueba correctos y completos para todas las funciones y procedimientos del programa
+
+En el archivo pruebas.cpp extisten tests con todas las funciones del grafo utilizadas.
+
 ### SICT0302B: Toma decisiones
 
 **Usa grafos para hacer analisis de información** 
