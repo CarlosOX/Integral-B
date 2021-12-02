@@ -135,7 +135,6 @@ string Graph::printAdjList() {
         for (int j: adjList[i]) {
             aux << " " << j;
         }
-        
         aux<<endl;
     }
     return aux.str();
