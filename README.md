@@ -2,6 +2,8 @@
 ### INTEGRAL B AVANCE 1
 En este proyecto se implementa la creación de un grafo para un hotel que se encuentra en playa del carmen. Este hotel tiene una gran extension por lo que es fácil pederse y tomar caminos demasiado largos por lo que la implementación de algoritmos de búsqueda es funcional para este caso. 
 
+![](grafito.PNG)
+
 
 ### SICT0302B: Toma decisiones
 
