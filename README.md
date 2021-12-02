@@ -7,7 +7,7 @@ En este proyecto se implementa la creación de un grafo para un hotel que se enc
 
 ![](grafito.PNG)
 
-### AQUI SE PUEDE APRECIAR EL GRAFO DEL HOTEL
+### AQUI SE PUEDE APRECIAR EL GRAFO DEL HOTEL. A CONTINUACIÓN SE MUESTRAS COMPETENCIAS A DEMOSTRAR.
 
 ### SICT0301B: Evalúa los componentes
 
