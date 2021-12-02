@@ -7,42 +7,29 @@ using namespace std;
 void printshellsort(int[], int n);
 void shellsort(int[], int n);
 
-void printshellsort(int a[], int n)
+void printshellsort(int sort[], int size)
 {
     cout << "Lugares favoritos ordenados: " << endl;
 
-    for (int i = 0; i < n; i++)
-        cout << "[ " << a[i] << " ]";
+    for (int i = 0; i < size; i++)
+        cout << "[ " << sort[i] << " ]";
 }
 
-void shellsort(int a[], int n)
-{
+void shellsort(int sort[],int size){
+	 for(int gap=size/2;gap>0;gap/=2){
+		for(int i=gap;i<size;i++){
+			int temp=sort[i];
+			int j;
+			for(j=i;j>=gap && sort[j-gap]>temp;j-=gap){
+				sort[j]=sort[j-gap];
+			}
+			sort[j]=temp;
 
-    int ints, i, aux;
-    bool band;
-    ints = n;
-    while (ints > 1)
-    {
-        ints = (ints / 2);
-        band = true;
-        while (band == true)
-        {
-            band = false;
-            i = 0;
-            while ((i + ints) <= n)
-            {
-                if (a[i] > a[i + ints])
-                {
-                    aux = a[i];
-                    a[i] = a[i + ints];
-                    a[i + ints] = aux;
-                    band = true;
-                }
-                i++;
-            }
-        }
-    }
+		}
+	}
 }
+
+
   
 
 int main(int argc, char* argv[]) {
