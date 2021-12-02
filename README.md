@@ -28,3 +28,9 @@ Se leen los datos del archivo "hotelito.txt" con  la funcion loadGraphMat() y lo
 
 **Implementa mecanismos de escritura de archivos correctos.**
 Se presenta esctritura de archivos en las líneas 55-67 del main.cpp donde se guarda la ruta, la matriz de adyasencia y la lista de adyasencia.
+
+
+### ANÁLISIS DE COMPLEJIDAD
+
+loadgraphlist: Esta función se basa en una lectura de un archivo por lo que su complejidad es O(n), estos datos se introducen a una lista con complejidad O(1) así que la complejidad de la funcion es O(n)
+
