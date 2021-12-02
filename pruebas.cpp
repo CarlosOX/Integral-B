@@ -10,9 +10,9 @@ int main(int argc, char* argv[]) {
 
     string hotel_ans, hotel_ans_2;
    
-    hotel.loadGraphList("hotelito.txt", 7, 7);
+    hotel.loadGraphList("hotelito.txt", 10, 10);
 
-    hotel.loadGraphMat("hotelito.txt", 7, 7);
+    hotel.loadGraphMat("hotelito.txt", 10, 10);
   
 
     //hotel.printAdjList()
