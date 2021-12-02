@@ -34,3 +34,5 @@ Se presenta esctritura de archivos en las líneas 55-67 del main.cpp donde se gu
 
 loadgraphlist: Esta función se basa en una lectura de un archivo por lo que su complejidad es O(n), estos datos se introducen a una lista con complejidad O(1) así que la complejidad de la funcion es O(n)
 
+BFS: Esta función arroja el camino más corto para llegar de un nodo a otro. Su complejidad temporal es de O(V+A) para el peor de los casos, ya que le toma V+A pasos para guardar en un string la lista de nodos visitados y el camino del recorrido de un grafo, donde V es el número de vértices y A es el número de arcos del grafo.
+
