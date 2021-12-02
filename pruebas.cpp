@@ -8,7 +8,7 @@ int main(int argc, char* argv[]) {
 
     Graph hotel;
 
-    string hotel_ans;
+    string hotel_ans, hotel_ans2;
    
     hotel.loadGraphList("hotelito.txt", 10, 10);
 
@@ -29,8 +29,9 @@ int main(int argc, char* argv[]) {
     hotel_ans = "CAMINO MAS CORTO : 0 3";
     cout << "\n" <<"3.- esperada  " << hotel_ans<<"\n programa " << hotel.BFS(0,3) << "\n";
     cout <<	( !hotel_ans.compare(hotel.BFS(0,3)) ? "success\n" : "fail\n");
+    
    //hotel.BFS(0,9);
-    hotel_ans = "CAMINO MAS CORTO : 0 3";
-    cout << "\n" <<"3.- esperada  " << hotel_ans<<"\n programa " << hotel.BFS(0,3) << "\n";
-    cout <<	( !hotel_ans.compare(hotel.BFS(0,9)) ? "success\n" : "fail\n");
+    hotel_ans2 = "CAMINO MAS CORTO : 0 1 2 8 9";
+    cout << "\n" <<"4.- esperada  " << hotel_ans2<<"\n programa " << hotel.BFS(0,9) << "\n";
+    cout <<	( !hotel_ans2.compare(hotel.BFS(0,9)) ? "success\n" : "fail\n");
 }
