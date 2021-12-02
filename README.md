@@ -13,7 +13,7 @@ En este proyecto se implementa la creación de un grafo para un hotel que se enc
 
 Presenta Casos de Prueba correctos y completos para todas las funciones y procedimientos del programa
 
-En el archivo pruebas.cpp extisten tests con todas las funciones del grafo utilizadas.
+En el archivo pruebas.cpp se demuestran las funciones del grafo utilizadas para ver que sirvan correctamente.
 
 ### SICT0302B: Toma decisiones
 
