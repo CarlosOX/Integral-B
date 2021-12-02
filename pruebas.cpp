@@ -16,14 +16,14 @@ int main(int argc, char* argv[]) {
   
 
     //hotel.printAdjList()
-    hotel_ans ="vertex 0 : 1 3 \nvertex 1 : 0 2 3 4 \nvertex 2 : 1 8 \nvertex 3 : 0 1 5 \nvertex 4 : 1 5 7 \nvertex 5 : 3 4 6 \nvertex 6 : 5 7 9 \nvertex 7 : 4 6 9 \nvertex 8 : 2 9 \nvertex 9 : 6 7 8";
-    cout << "\n" <<"1.- esperada\n" << hotel_ans << "\n programa\n" << hotel.printAdjList() << "\n";
-   
+    hotel_ans ="vertex 0 : 1 3\nvertex 1 : 0 2 3 4\nvertex 2 : 1 8\nvertex 3 : 0 1 5\nvertex 4 : 1 5 7\nvertex 5 : 3 4 6\nvertex 6 : 5 7 9\nvertex 7 : 4 6 9\nvertex 8 : 2 9\nvertex 9 : 6 7 8\n";
+    cout << "\n" <<"1.- esperada\n" << hotel_ans << "\nprograma\n" << hotel.printAdjList() << "\n";
+    cout <<	( !hotel_ans.compare(hotel.printAdjList()) ? "success\n" : "fail\n");
 
     //hotel.printAdjMat()
-    hotel_ans = "0 1 0 1 0 0 0 0 0 0 \n1 0 1 1 1 0 0 0 0 0 \n0 1 0 0 0 0 0 0 1 0 \n1 1 0 0 0 1 0 0 0 0 \n0 1 0 0 0 1 0 1 0 0 \n0 0 0 1 1 0 1 0 0 0 \n0 0 0 0 0 1 0 1 0 1 \n0 0 0 0 1 0 1 0 0 1 \n0 0 1 0 0 0 0 0 0 1 \n0 0 0 0 0 0 1 1 1 0";
+    hotel_ans = "0 1 0 1 0 0 0 0 0 0 \n1 0 1 1 1 0 0 0 0 0 \n0 1 0 0 0 0 0 0 1 0 \n1 1 0 0 0 1 0 0 0 0 \n0 1 0 0 0 1 0 1 0 0 \n0 0 0 1 1 0 1 0 0 0 \n0 0 0 0 0 1 0 1 0 1 \n0 0 0 0 1 0 1 0 0 1 \n0 0 1 0 0 0 0 0 0 1 \n0 0 0 0 0 0 1 1 1 0 \n";
     cout << "\n" <<"2.- esperada\n" << hotel_ans << "\n programa \n" << hotel.printAdjMat() << "\n";
-   
+    cout <<	( !hotel_ans.compare(hotel.printAdjMat()) ? "success\n" : "fail\n");
 
     //hotel.BFS(0,3);
     hotel_ans = "CAMINO MAS CORTO : 0 3";
