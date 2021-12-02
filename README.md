@@ -35,7 +35,7 @@ En este proyecto se utilizará un BFS ya que el objetivo es mostrar el camino m�
 Se leen los datos del archivo "hotelito.txt" con  la funcion loadGraphMat() y loadGraphList. Con esto se libera peso y trabajo al código fuente.
 
 **Implementa mecanismos de escritura de archivos correctos.**
-Se presenta esctritura de archivos en las líneas 55-67 del main.cpp donde se guarda la ruta, la matriz de adyasencia y la lista de adyasencia.
+Se presenta esctritura de archivos en las líneas 55-67 del main.cpp donde se guarda la ruta, la matriz de adyasencia y la lista de adyasencia en un archivo de texto generado automáticamente
 
 
 ### ANÁLISIS DE COMPLEJIDAD
