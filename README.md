@@ -49,9 +49,8 @@ También se puede ver su implementación en las líneas 7-30 del main.cpp
 **Describe cada algoritmo de la estructura (inserción, consulta, etc...) de forma clara y con ejemplos**
 Para la parte de inserción:
 
-El algoritmo ShellSort mejora el ordenamiento por inserción comparando elementos separados por un espacio de varias posiciones. Esto permite que un elemento haga “pasos más grandes” hacia su posición esperada. Los pasos múltiples sobre los datos se hacen con tamaños de espacio cada vez más pequeños.
-El último paso del ShellSort es un simple ordenamiento por inserción, pero para entonces, ya
-está garantizado que los datos del vector están casi ordenados.
+El algoritmo ShellSort mejora el ordenamiento por inserción comparando elementos separados por un espacio de varias posiciones,permitiendo de tal forma  que un elemento haga “pasos más grandes” hacia su posición a la cual se desea llegar. Los pasos múltiples sobre los datos se hacen con tamaños de espacio cada vez más pequeños.
+El último paso del ShellSort es un simple ordenamiento por inserción. 
 
 **Ejemplo de funcionalidad del SHELLSORT**
 Se presenta el siguietne array. ARRAY(10,8,4,7)
