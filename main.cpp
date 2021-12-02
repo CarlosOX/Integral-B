@@ -4,8 +4,45 @@
 #include <fstream>
 using namespace std;
 
+void printshellsort(int[], int n);
+void shellsort(int[], int n);
 
+void printshellsort(int a[], int n)
+{
+    cout << "Lugares favoritos ordenados: " << endl;
 
+    for (int i = 0; i < n; i++)
+        cout << "[ " << a[i] << " ]";
+}
+
+void shellsort(int a[], int n)
+{
+
+    int ints, i, aux;
+    bool band;
+    ints = n;
+    while (ints > 1)
+    {
+        ints = (ints / 2);
+        band = true;
+        while (band == true)
+        {
+            band = false;
+            i = 0;
+            while ((i + ints) <= n)
+            {
+                if (a[i] > a[i + ints])
+                {
+                    aux = a[i];
+                    a[i] = a[i + ints];
+                    a[i + ints] = aux;
+                    band = true;
+                }
+                i++;
+            }
+        }
+    }
+}
   
 
 int main(int argc, char* argv[]) {
@@ -24,7 +61,8 @@ int main(int argc, char* argv[]) {
     cout<<"1. Ver mapa\n";
     cout<<"2. Escoger ruta\n";
     cout<<"3. ver grafo\n";
-    cout<<"4. Salir\n";
+    cout<<"4. Opiniones\n";
+    cout<<"5. Salir\n";
     cout<<"Opcion: ";
     cin>>opcion;
 
@@ -75,10 +113,23 @@ int main(int argc, char* argv[]) {
 
     }
     else if(opcion==4){
+      int lugares;
+      cout<<"\nCuantos lugares le gusto visitar del hotel?\n";
+      cin>>lugares;
+      int arreglo[lugares];
+      for(int i=0; i<lugares;i++){
+        cout<<"Ingrese el numero de alguno de esos lugares favoritos: ";
+        cin>>arreglo[i];
+      }
+
+      shellsort(arreglo,lugares);
+      printshellsort(arreglo,lugares);
+    }
+
+    else if(opcion==5){
       cout<<"Usted ha salido";
       continua=false;
     }
-
 
     else{
       cout<<"Error, opcion invalida";
