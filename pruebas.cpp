@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
   
 
     //hotel.printAdjList()
-    g_ans ="vertex 0 : 1 4 vertex 1 : 0 2 3 vertex 2 : 1 vertex 3 : 1 6 vertex 4 : 0 5 vertex 5 : 4 vertex 6 : 3 ";
+    g_ans ="vertex 0 : 1 3 \nvertex 1 : 0 2 3 4 \nvertex 2 : 1 8 \nvertex 3 : 0 1 5 \nvertex 4 : 1 5 7 \nvertex 5 : 3 4 6 \nvertex 6 : 5 7 9 \nvertex 7 : 4 6 9 \nvertex 8 : 2 9 \nvertex 9 : 6 7 8";
     cout << "\n" <<"1.- esperada " << g_ans << "\n programa " << g.printAdjList() << "\n";
     cout <<	(!g_ans.compare(g.printAdjList()) ? "success\n" : "fail\n");
 
