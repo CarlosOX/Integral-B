@@ -4,6 +4,7 @@ En este proyecto se implementa la creación de un grafo para un hotel que se enc
 
 ![](grafito.PNG)
 
+### AQUI SE PUEDE APRECIAR EL GRAFO DEL HOTEL
 
 ### SICT0302B: Toma decisiones
 
