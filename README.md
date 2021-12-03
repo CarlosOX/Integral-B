@@ -53,6 +53,7 @@ El algoritmo ShellSort mejora el ordenamiento por inserción comparando elemento
 El último paso del ShellSort es un simple ordenamiento por inserción. 
 
 **Ejemplo de funcionalidad del SHELLSORT**
+
 Se presenta el siguietne array. ARRAY(10,8,4,7)
 Primero se obtiene el tamaño del arreglo, el cual es de 4. 
 Posteriormente se obtiene el valor del gap en esa primera iteración: 4/2= 2
