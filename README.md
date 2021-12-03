@@ -83,6 +83,7 @@ ARRAY(4,7,8,10).
 De esta forma queda el array final, como se puede observar, este algoritmo es muy funcional cuando se trata de pocos elementos y ya casi ordenados ya que funciona con iteraaciones.
 
 **ANÁLISIS DE COMPLEJIDAD SHELLSORT**
+
 Para el peor de los casos donde existan elementos muy desordenados se tiene una complejidad de O(n^2) debido a que se realiza un swap por cada gap generado y para el mejor de los casos será una complejidad Ω(nlog n), esto cuando no se tengan que realizar casi swaps ya que están casi ordenados.
 
 ### ANÁLISIS DE COMPLEJIDAD GRAFOS
